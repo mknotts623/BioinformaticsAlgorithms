@@ -30,7 +30,3 @@ def FrequentWords(text, k):
         if count[i] == max:
             FrequentPatterns.add(text[i: i + k])
     return FrequentPatterns
-
-
-
-print(FrequentWords('ATGTGCTGCGATG', 3))

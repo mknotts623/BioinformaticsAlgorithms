@@ -20,4 +20,3 @@ def FrequencyTable(text, k):
             freqMap[pattern] = 1
     return freqMap
 
-print(FrequencyTable('ATGTGCTGCGATG', 3))
