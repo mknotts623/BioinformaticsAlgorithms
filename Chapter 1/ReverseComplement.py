@@ -3,10 +3,10 @@ def ReverseComplement(seq):
     Returns the reverse complement of a given DNA sequence
 
     Parameters:
-    seq (int): DNA sequence which the reverse complement is to be taken of
+    seq (str): DNA sequence which the reverse complement is to be taken of
 
     Returns:
-    revComp (int): Reverse Complement of the input sequence
+    revComp (str): Reverse Complement of the input sequence
     '''
     compDict = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
     revComp = ''
@@ -14,7 +14,7 @@ def ReverseComplement(seq):
         if seq[i] == '<':
             print(i)
         revComp += compDict[seq[i]]
-    return revComp[::-1]
+    return "".join(revComp[::-1])
 
 def readFile(file):
     #parses text file from Rosalind to obtain input sequence
