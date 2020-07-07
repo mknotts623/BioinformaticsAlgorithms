@@ -13,7 +13,12 @@ def motif_enumeration(dna, k, d):
 
     Parameters:
     dna (str): dna sequences for which motifs are being found, separated by \n
+    k (int): size of motif
+    d (int): maximum Hamming Distance between sequence and pattern
 
+    Returns:
+
+    patterns (set): motifs found in all dna strands
     '''
     seqs = dna.split('\n')
     if seqs[-1] == '':
